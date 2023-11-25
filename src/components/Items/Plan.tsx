@@ -222,7 +222,7 @@ const Plan: FC<PlanProps> = ({
               </span>
             </>
           }
-          <button className="text-sm text-white font-extrabold uppercase bg-[#ee122c] py-2 px-6 rounded-full" onClick={ () => setActiveModalForm(true) }>Solicitar Información</button>
+          <button className="text-sm text-white font-extrabold uppercase bg-[#ee122c] py-2 px-6 rounded-full hover:bg-white transition-all duration-500 hover:text-[#ee122c] hover:border-[#ee122c] border" onClick={ () => setActiveModalForm(true) }>Solicitar Información</button>
         </div>
       </div>
       <Modal

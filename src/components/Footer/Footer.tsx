@@ -1,5 +1,5 @@
 'use client'
-import DyCLogoWhite from "../../../public/img/logo-claro-blanco.webp"
+import DyCLogoWhite from "../../../public/img/logo-d-y-c.webp"
 import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
 

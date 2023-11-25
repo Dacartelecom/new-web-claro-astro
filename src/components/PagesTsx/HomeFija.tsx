@@ -1,15 +1,14 @@
 import type { EmblaOptionsType } from "embla-carousel-react";
 import type { CSSProperties } from "react";
-import BannerDesktop3 from "../../../public/img/banner-desktop-3.webp";
-import BannerDesktop4 from "../../../public/img/banner-desktop-4.webp";
+import BannerDesktop1 from "../../../public/img/banner-desktop-1.webp";
+import BannerDesktop2 from "../../../public/img/banner-desktop-2.webp";
 import BannerDesktop5 from "../../../public/img/banner-desktop-5.webp";
 import BannerDesktop6 from "../../../public/img/banner-desktop-6.webp";
 import BannerDesktop8 from "../../../public/img/banner-desktop-8.webp";
 import BannerDesktop9 from "../../../public/img/banner-desktop-9.webp";
 import BannerDesktop10 from "../../../public/img/banner-desktop-10.webp";
-import BannerMobile3 from "../../../public/img/banner-mobile-3.webp";
-import BannerMobile4 from "../../../public/img/banner-mobile-4.webp";
-import BannerMobile5 from "../../../public/img/banner-mobile-5.webp";
+import BannerMobile1 from "../../../public/img/banner-mobile-1.webp";
+import BannerMobile2 from "../../../public/img/banner-mobile-2.webp";
 import BannerMobile6 from "../../../public/img/banner-mobile-6.webp";
 import BannerMobile8 from "../../../public/img/banner-mobile-8.webp";
 import BannerMobile9 from "../../../public/img/banner-mobile-9.webp";
@@ -17,6 +16,7 @@ import BannerMobile10 from "../../../public/img/banner-mobile-10.webp";
 import InternetTelefonia from "../../../public/img/internet-telefonia.webp";
 import InternetTelevision from "../../../public/img/internet-television.webp";
 import InternetTelefoniaTv from "../../../public/img/internet-telefonia-tv.webp";
+import InternetHfcFtth from "../../../public/img/internet-hfc-ftth.webp"
 import Internet from "../../../public/img/internet.webp";
 import LogoNetflix from "../../../public/img/logo-netflix.webp";
 import Carousel from "../Carousel/Carousel";
@@ -35,28 +35,27 @@ const STYLES_MOBILE: CSSProperties = {};
 const STYLES_DESKTOP: CSSProperties = {};
 
 const imagesMobile = [
-  `${BannerMobile3.src}`,
-  `${BannerMobile4.src}`,
-  `${BannerMobile5.src}`,
-  `${BannerMobile6.src}`,
   `${BannerMobile8.src}`,
+  `${BannerMobile1.src}`,
+  `${BannerMobile2.src}`,
+  `${BannerMobile6.src}`,
   `${BannerMobile9.src}`,
   `${BannerMobile10.src}`,
 ];
 
 const imagesDesktop= [
-  `${BannerDesktop3.src}`,
-  `${BannerDesktop4.src}`,
+  `${BannerDesktop8.src}`,
+  `${BannerDesktop1.src}`,
+  `${BannerDesktop2.src}`,
   `${BannerDesktop5.src}`,
   `${BannerDesktop6.src}`,
-  `${BannerDesktop8.src}`,
   `${BannerDesktop9.src}`,
   `${BannerDesktop10.src}`,
 
 ];
 
 const ItemsPlanes: ItemsArray = [
-  /*{
+  {
     title: 'internet hfc / ftth',
     message: {
       strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
@@ -65,32 +64,7 @@ const ItemsPlanes: ItemsArray = [
     planes: [
       {
         className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
-        alt: "Internet hfc/ftth",
-        width: 45,
-        height: 29,
-        promo: 'Precio',
-        price: '59',
-        plan: '1play 50  mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '50mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '100mbps'
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
+        src: InternetHfcFtth.src,
         alt: "Internet hfc/ftth",
         width: 45,
         height: 29,
@@ -98,26 +72,26 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '69',
         regular: 'Precio Regular S/79',
-        plan: '1play 100 mbps',
+        plan: '1play 100 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
           {
             description: 'Velocidad máxima de Bajada/Subida',
-            strong: '100mbps'
+            strong: '100Mbps'
           },
           {
             description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '200mbps'
+            strong: '200Mbps'
           },
         ]
       },
       {
         className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
+        src: InternetHfcFtth.src,
         alt: "Internet hfc/ftth",
         width: 45,
         height: 29,
@@ -125,26 +99,26 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '79',
         regular: 'Precio Regular S/89',
-        plan: '1play 200 mbps',
+        plan: '1play 200 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
           {
             description: 'Velocidad máxima de Bajada/Subida',
-            strong: '200mbps'
+            strong: '200Mbps'
           },
           {
             description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '400mbps'
+            strong: '400Mbps'
           },
         ]
       },
       {
         className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
+        src: InternetHfcFtth.src,
         alt: "Internet hfc/ftth",
         width: 45,
         height: 29,
@@ -152,248 +126,248 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '99',
         regular: 'Precio Regular S/129',
-        plan: '1play 300 mbps',
+        plan: '1play 300 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
           {
             description: 'Velocidad máxima de Bajada/Subida',
-            strong: '300mbps'
+            strong: '300Mbps'
           },
           {
             description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '600mbps'
+            strong: '600Mbps'
           },
         ]
       },
       {
         className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
+        src: InternetHfcFtth.src,
         alt: "Internet hfc/ftth",
         width: 45,
         height: 29,
         promo: 'Precio',
         price: '199',
-        plan: '1play 500 mbps',
+        plan: '1play 500 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
           {
             description: 'Velocidad máxima de Bajada/Subida',
-            strong: '500mbps'
+            strong: '500Mbps'
           },
           {
             description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '100mbps'
+            strong: '1000Mbps'
           },
         ]
       },
       {
         className: 'lg:basis-1/3',
-        src: InternetHfcFtth,
+        src: InternetHfcFtth.src,
         alt: "Internet hfc/ftth",
         width: 45,
         height: 29,
         promo: 'Precio',
         price: '399',
-        plan: '1play 1000 mbps',
+        plan: '1play 1000 Mbps',
         classNamePlan: 'text-xl',
         data: [
           {
             description: 'Velocidad máxima de Bajada/Subida',
-            strong: '1000mbps'
-          },
-        ]
-      },
-    ]
-  },*/
-
-
-  {
-    title: 'internet + telefonía',
-    message: {
-      strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
-      text: '(Sujeto a evaluación crediticia)'
-    },
-    planes: [
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        promo: 'Precio',
-        price: '69',
-        plan: '2play 50 mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '50 Mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '100 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional',
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        dscto: '-S/10',
-        promo: 'Precio por 6 Meses',
-        price: '79',
-        regular: 'Precio Regular S/89',
-        plan: '2play 100 mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '100 Mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '200 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        dscto: '-S/10',
-        promo: 'Precio por 6 Meses',
-        price: '89',
-        regular: 'Precio Regular S/99',
-        plan: '2play 200 mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '200 Mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '400 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        dscto: '-S/10',
-        promo: 'Precio por 6 Meses',
-        price: '129',
-        regular: 'Precio Regular S/139',
-        plan: '2play 300 mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '300 Mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '600 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        dscto: '-S/10',
-        promo: 'Precio por 6 Meses',
-        price: '199',
-        regular: 'Precio Regular S/209',
-        plan: '2play 500 mbps',
-        classNamePlan: 'text-base',
-        extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 mbps</span>
-          <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
-        </div>,
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '500 Mbps'
-          },
-          {
-            description: 'Velocidad máxima de Bajada/Subida con Full Claro',
-            strong: '1000 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
-          },
-        ]
-      },
-      {
-        className: 'lg:basis-1/3',
-        src: InternetTelefonia.src,
-        alt: "Internet + Telefonía",
-        width: 200,
-        height: 74,
-        dscto: '-S/10',
-        promo: 'Precio por 6 Meses',
-        price: '399',
-        regular: 'Precio Regular S/409',
-        plan: '2play 1000 mbps',
-        classNamePlan: 'text-xl',
-        data: [
-          {
-            description: 'Velocidad máxima de Bajada/Subida',
-            strong: '1000 Mbps'
-          },
-          {
-            description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional',
+            strong: '1000Mbps'
           },
         ]
       },
     ]
   },
+
+
+  // {
+  //   title: 'internet + telefonía',
+  //   message: {
+  //     strong: '¡Atención! Seguimos con el S/ 0 costo de instalación a nivel nacional',
+  //     text: '(Sujeto a evaluación crediticia)'
+  //   },
+  //   planes: [
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       promo: 'Precio',
+  //       price: '69',
+  //       plan: '2play 50 Mbps',
+  //       classNamePlan: 'text-base',
+  //       extraPlan: <div className="flex flex-col items-center justify-center">
+  //         <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 Mbps</span>
+  //         <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
+  //       </div>,
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '50 Mbps'
+  //         },
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+  //           strong: '100 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       dscto: '-S/10',
+  //       promo: 'Precio por 6 Meses',
+  //       price: '79',
+  //       regular: 'Precio Regular S/89',
+  //       plan: '2play 100 Mbps',
+  //       classNamePlan: 'text-base',
+  //       extraPlan: <div className="flex flex-col items-center justify-center">
+  //         <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 Mbps</span>
+  //         <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
+  //       </div>,
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '100 Mbps'
+  //         },
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+  //           strong: '200 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       dscto: '-S/10',
+  //       promo: 'Precio por 6 Meses',
+  //       price: '89',
+  //       regular: 'Precio Regular S/99',
+  //       plan: '2play 200 Mbps',
+  //       classNamePlan: 'text-base',
+  //       extraPlan: <div className="flex flex-col items-center justify-center">
+  //         <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 Mbps</span>
+  //         <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
+  //       </div>,
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '200 Mbps'
+  //         },
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+  //           strong: '400 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       dscto: '-S/10',
+  //       promo: 'Precio por 6 Meses',
+  //       price: '129',
+  //       regular: 'Precio Regular S/139',
+  //       plan: '2play 300 Mbps',
+  //       classNamePlan: 'text-base',
+  //       extraPlan: <div className="flex flex-col items-center justify-center">
+  //         <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 Mbps</span>
+  //         <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
+  //       </div>,
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '300 Mbps'
+  //         },
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+  //           strong: '600 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       dscto: '-S/10',
+  //       promo: 'Precio por 6 Meses',
+  //       price: '199',
+  //       regular: 'Precio Regular S/209',
+  //       plan: '2play 500 Mbps',
+  //       classNamePlan: 'text-base',
+  //       extraPlan: <div className="flex flex-col items-center justify-center">
+  //         <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 Mbps</span>
+  //         <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
+  //       </div>,
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '500 Mbps'
+  //         },
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida con Full Claro',
+  //           strong: '1000 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional​​',
+  //         },
+  //       ]
+  //     },
+  //     {
+  //       className: 'lg:basis-1/3',
+  //       src: InternetTelefonia.src,
+  //       alt: "Internet + Telefonía",
+  //       width: 200,
+  //       height: 74,
+  //       dscto: '-S/10',
+  //       promo: 'Precio por 6 Meses',
+  //       price: '399',
+  //       regular: 'Precio Regular S/409',
+  //       plan: '2play 1000 Mbps',
+  //       classNamePlan: 'text-xl',
+  //       data: [
+  //         {
+  //           description: 'Velocidad máxima de Bajada/Subida',
+  //           strong: '1000 Mbps'
+  //         },
+  //         {
+  //           description: 'Llamadas Ilimitadas a Teléfonos Fijos y Móviles de Claro + 100 min nivel nacional',
+  //         },
+  //       ]
+  //     },
+  //   ]
+  // },
   {
     title: 'internet + televisión',
     message: {
@@ -409,10 +383,10 @@ const ItemsPlanes: ItemsArray = [
         height: 74,
         promo: 'Precio',
         price: '139',
-        plan: '2play 50 mbps',
+        plan: '2play 50 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -439,10 +413,10 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '139',
         regular: 'Precio Regular S/159',
-        plan: '2play 100 mbps',
+        plan: '2play 100 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -469,10 +443,10 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '149',
         regular: 'Precio Regular S/169',
-        plan: '2play 200 mbps',
+        plan: '2play 200 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -499,10 +473,10 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '179',
         regular: 'Precio Regular S/209',
-        plan: '2play 300 mbps',
+        plan: '2play 300 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -529,10 +503,10 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '249',
         regular: 'Precio Regular S/279',
-        plan: '2play 500 mbps',
+        plan: '2play 500 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -559,7 +533,7 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '449',
         regular: 'Precio Regular S/479',
-        plan: '2play 1000 mbps',
+        plan: '2play 1000 Mbps',
         classNamePlan: 'text-xl',
         data: [
           {
@@ -588,10 +562,10 @@ const ItemsPlanes: ItemsArray = [
         height: 74,
         promo: 'Precio',
         price: '149',
-        plan: '3play 50 mbps',
+        plan: '3play 50 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 50 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -624,7 +598,7 @@ const ItemsPlanes: ItemsArray = [
         plan: '3play 100 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 100 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -657,7 +631,7 @@ const ItemsPlanes: ItemsArray = [
         plan: '3play 200 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 200 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -690,7 +664,7 @@ const ItemsPlanes: ItemsArray = [
         plan: '3play 300 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 300 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -720,10 +694,10 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 6 Meses',
         price: '254',
         regular: 'Precio Regular S/284',
-        plan: '3play 500 mbps',
+        plan: '3play 500 Mbps',
         classNamePlan: 'text-base',
         extraPlan: <div className="flex flex-col items-center justify-center">
-          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 mbps</span>
+          <span className="text-[#ee122c] text-xl font-bold uppercase">+ 500 Mbps</span>
           <span className="text-gray-500 text-xs font-medium">(x 6 meses)</span>
         </div>,
         data: [
@@ -793,7 +767,7 @@ const ItemsPlanes: ItemsArray = [
         classNamePlan: 'text-xl',
         extraPlan: <div className="w-40">
           <img
-            src={ `${LogoNetflix}` }
+            src={ `${LogoNetflix.src}` }
             alt="Logo Netflix"
             width={ 2226 }
             height={ 678 }
@@ -827,11 +801,11 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 3 Meses',
         price: '95.10',
         regular: 'Precio Regular S/130',
-        plan: '2play 180 mbps +',
+        plan: '2play 180 Mbps +',
         classNamePlan: 'text-xl',
         extraPlan: <div className="w-40">
           <img
-            src={ `${LogoNetflix}` }
+            src={ `${LogoNetflix.src}` }
             alt="Logo Netflix"
             width={ 2226 }
             height={ 678 }
@@ -865,11 +839,11 @@ const ItemsPlanes: ItemsArray = [
         promo: 'Precio por 3 Meses',
         price: '180.10',
         regular: 'Precio Regular S/215',
-        plan: '3play 180 mbps +',
+        plan: '3play 180 Mbps +',
         classNamePlan: 'text-xl',
         extraPlan: <div className="w-40">
           <img
-            src={ `${LogoNetflix}` }
+            src={ `${LogoNetflix.src}` }
             alt="Logo Netflix"
             width={ 2226 }
             height={ 678 }
@@ -910,7 +884,7 @@ const ItemsPlanes: ItemsArray = [
         classNamePlan: 'text-xl',
         extraPlan: <div className="w-40">
           <img
-            src={ `${LogoNetflix}` }
+            src={ `${LogoNetflix.src}` }
             alt="Logo Netflix"
             width={ 2226 }
             height={ 678 }
